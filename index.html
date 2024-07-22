@@ -1,0 +1,396 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Ai</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="dist/main.css">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="op opacity md:hidden fixed top-0 left-0 w-full h-screen z-10"></div>
+    <!-- start navigation -->
+    <nav class="border-b bg-[#0f051f] border-gray-500 z-20 sticky top-0 ">
+      <div class="container mx-auto flex justify-between py-3 items-center">
+        <img class="md:mr-20" src="assets/Logo.png" alt="">
+        <ul class="flex-col z-10 flex fixed md:relative md:top-0 shr right-0 top-[66px] md:flex-row overflow-hidden justify-around items-center rounded-md md:border-gray-500 md:border md:py-2 md:px-4 md:rounded-full md:flex-1 md:justify-between">
+          <li class="mr-3"><a href="">features</a></li>
+          <li class="mr-3"><a href="">developers</a></li>
+          <li class="mr-3"><a href="">company</a></li>
+          <li class="mr-3"><a href="">blog</a></li>
+          <li class=""><a href="">changelog</a></li>
+        </ul>
+        <div class="flex items-center">
+          <div class="border-gray-500 border p-1 rounded-lg md:ml-20">
+            <button class="py-1 px-4 rounded-lg">join wishlist</button>
+          </div>
+          <div class="menu z-20 justify-between ml-4 relative h-4 w-7 cursor-pointer md:hidden">
+            <span class="span-1 w-7 absolute top-0 def rounded-full h-[2px] bg-white "></span>
+            <span class="span-2 w-7 vis absolute top-2  rounded-full h-[2px] bg-white "></span>
+            <span class="span-3 w-7 absolute top-4 def rounded-full h-[2px] bg-white "></span>
+          </div>
+        </div>
+      </div>
+    </nav>      
+    <!-- end navigation -->
+    <!-- start hero -->
+    <div class="hero overflow-hidden relative ">
+      <div class="flex rounded-full items-center bg-blackr w-fit mx-auto mt-20 mb-5 md:mb-0 md:mt-[50px] p-2 border border-[#ffffff40]">
+        <button class="uppercase font-bold text-[12px] text-black py-[2px] px-2 bg-[#9855FF] rounded-3xl">new</button>
+        <p class="ml-2 text-[#9855FF]">Latest integration just arrived</p>
+      </div >
+      <div class="text-center mt-4 head">
+        <h1 class="text-4xl font-bold leading-[1.2]">Boost your<br>rankings with AI.</h1>
+        <p class="max-w-sm mt-6 text-center mx-auto">Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.</p>
+        <button class="bg-white p-2 capitalize text-[15px] rounded-lg my-8 text-black font-bold">start for free</button>
+      </div>
+      <div class="sha px-8 mt-4 shadow-xl">
+        <img class="bg-center bg-cover w-full" src="assets/hero.png" alt="">
+      </div>
+    </div>
+    <!-- end hero -->
+    <!-- start logos -->
+    <div class="container mx-auto mt-20">
+      <p class="text-center text-[#ffffff70]">Trusted by the world's most innovative teams</p>
+      <div class="grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 ">
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto " src="assets/logos/company 1.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 2.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 3.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 4.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 5.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 6.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 7.png" alt="">
+        </div>
+        <div class="px-2 py-5 border border-[#ffffff30]">
+          <img class="relative mx-auto" src="assets/logos/company 8.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end logos -->
+    <!-- start bento -->
+      <div class="bento1 container mt-20 flex mx-auto gap-5 flex-col md:flex-row ">
+        <div class="border border-[#ffffff20] px-5 pb-3 w-full md:w-fit ">
+          <img class="mx-auto" src="assets/bento/bento 1.png" alt="">
+          <h3 class="font-bold text-[20px] ml-2 my-3 ">SEO goal setting</h3>
+          <p class="ml-2 mb-5 text-[#ffffff70]">Helps you set and achieve SEO <br> goals with guided assistance.</p>
+        </div>
+        <div class="flex-1 w-full relative border border-[#ffffff20] overflow-hidden">
+          <img class="relative left-7 bottom-7" src="assets/bento/bento 1 web.png" alt="">
+          <div class="w-full h-full absolute bg-gradient-to-t from-[#361764] to-[#ffffff00] bottom-0 left-0"></div>
+          <div class="relative md:absolute bottom-7 left-7">
+            <h2 class="font-bold text-[20px] ml-2 my-3">User-friendly dashboard</h2>
+            <p class="ml-2 text-[#ffffff70]">Perform complex SEO audits and <br> optimizations with a single click.</p>
+          </div>
+        </div>
+      </div>
+      <!-- bento2 -->
+      <div class="bento2 container mt-12 flex mx-auto gap-5 flex-col md:flex-row ">
+        <div class="border order-2 border-[#ffffff20] px-5 pb-3 w-full md:w-fit ">
+          <img class="mx-auto" src="assets/bento/bento 2.png" alt="">
+          <h3 class="font-bold text-[20px] ml-2 my-3 ">Smart Keyword Generator</h3>
+          <p class="ml-2 mb-5 text-[#ffffff70]">Visual insights into your <br> site's performance.</p>
+        </div>
+        <div class="flex-1 w-full order-1 relative border border-[#ffffff20] overflow-hidden">
+          <img class="relative left-5 bottom-5" src="assets/bento/bento web 2.png" alt="">
+          <div class="w-full h-full absolute bg-gradient-to-t from-[#361764] to-[#ffffff00] bottom-0 left-0"></div>
+          <div class="relative md:absolute bottom-7 left-7">
+            <h2 class=" font-bold text-[20px] ml-2 my-3">Visual reports</h2>
+            <p class="ml-2 text-[#ffffff70]">Automatic suggestions and <br> the best keywords to target.</p>
+          </div>
+        </div>
+      </div>
+    <!-- end bento -->
+    <!-- start text  -->
+    <div class="te bg-gradient-to-r from-[#190D2E] to-[#020103] mt-10">
+      <div class="container pt-6 pb-20 px-5 mx-auto">
+        <h1 class="ml-5 sm:ml-0 my-10 text-[30px] md:text-[40px]">Elevate your SEO efforts.</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-10">
+          <!-- first -->
+          <div>
+            <div class="flex mb-3  ml-5 md:ml-0">
+              <i class="ri-speed-up-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">User-friendly dashboard</h2>
+            </div>
+            <p class="text-[#ffffff70] text-[16px] ml-5 sm:ml-0">Perform complex SEO audits and <br> optimizations with a single click.</p>
+          </div>
+          <!-- second -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-tools-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Content evaluation</h2>
+            </div>
+            <p class="ml-5 sm:ml-0 text-[#ffffff70] text-[16px]">Simple corrections for immediate <br> improvemens.</p>
+          </div>
+          <!-- third -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-magic-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Link Optimization Wizard</h2>
+            </div>
+            <p class="ml-5 sm:ml-0 text-[#ffffff70] text-[16px]">Guides you through the process <br> of creating and managing links.</p>
+          </div>
+          <!-- fourth -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-alarm-warning-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Visual reports</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Visual insights into your site's <br> performance.</p>
+          </div>
+          <!-- fifth -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-seo-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">SEO goal setting</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Helps you set and achieve SEO goals with guided assistance.</p>
+          </div>
+          <!-- sixth -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-cursor-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">One-click optimization</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Perform complex SEO audits and <br> optimizations with a single click.</p>
+          </div>
+          <!-- seventh -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-sparkling-2-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Smart Keyword Generator</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Automatic suggestions and the best <br> keywords to target.</p>
+          </div>
+          <!-- eighth -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-alert-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Automated alerts</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Automatic notifications about your SEO health, including quick fixes.</p>
+          </div>
+          <!-- ninth -->
+          <div>
+            <div class="flex mb-3 ml-5 sm:ml-0">
+              <i class="ri-file-line mr-2 text-[22px]"></i>
+              <h2 class="text-[22px]">Competitor reports</h2>
+            </div>
+            <p class="text-[#ffffff70] ml-5 sm:ml-0 text-[16px]">Provides insights into competitors' <br> keyword strategies and ranking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end text  -->
+    <!-- start client  -->
+    <div class="client container mx-auto mt-20">
+      <h2 class="text-center text-[40px] mb-3">Our clients</h2>
+      <p class="text-center px-12 leading-7">Hear firsthand how our solutions have boosted online success for users like you.</p>
+        <div class="pt-20 pb-0 mb:pb:20 pl-20 md:py-32 md:pl-32 relative mt-5 flex flex-col sm:flex-row h-[544px]  md:h-fit">
+          <div class="bg-white left-1 absolute w-full h-[1px] bg-gradient-to-t from-transparent via-white to-transparent"></div>
+          <div class="bg-white left-1 top-[297px] md:top-[345px] absolute w-full h-[1px] bg-gradient-to-t from-transparent via-white to-transparent"></div>
+          <div class="bg-white top-0 absolute h-full w-[1px] bg-gradient-to-t from-transparent via-white to-transparent"></div>
+          <div class="bg-white left-[297px] md:left-[345px]  top-0 absolute h-full w-[1px] bg-gradient-to-t from-transparent via-white to-transparent"></div>
+          <img class="w-[217px] h-[217px]" src="assets/client.png" alt="">
+          <div class="md:ml-10 mt-20 md:mt-4 ml-7 absolute bottom-0  md:relative left-[-30px] md:left-0 z-30 text-center md:text-left w-full">
+            <h3 class="text-[22px]">”This product has completely <br> transformed how I manage my <br> projects and deadlines”</h3>
+            <p class="mb-2 mt-3">Talia Taylor</p>
+            <p class="text-[#ffffff70] ">Digital Marketing Director @ Quantum</p>
+          </div>
+        </div>
+    </div>
+    <!-- end client  -->
+    <!-- start prices -->
+    <div class="container mx-auto mt-20 price px-14 md:px-0">
+      <h2 class="md:text-[45px] text-[30px] text-center mb-3">Pricing</h2>
+      <p class="text-center leading-8">Choose the right plan to meet your SEO <br> needs and start optimizing today.</p>
+      <div class="mx-auto w-fit btn mt-4 flex items-center ">
+        <div class="w-[45px] rounded-2xl h-5 bg-white relative p-3 mr-2" id="zaza">
+          <span class="size-5 rounded-full absolute inline-block lef  top-[2px] "></span>
+        </div>
+        <p>billed yearly</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+        <!-- first -->
+        <div class="price-1 flex border-[#ffffff50] relative  md:bg-gradient-to-l bg-gradient-to-t from-[#361764] to-[#010002]  flex-col p-4 border justify-between h-[431.33px]">
+          <div class="z-10">
+            <h2 class="text-[30px]">basic</h2>
+            <p class="mb-2">$29/mo</p>
+            <span class="h-[1px] w-full bg-gray-700 inline-block"></span>
+            <div class="flex mt-3 mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Keyword optimization</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Automated meta tags</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">SEO monitoring</p>
+            </div>
+            <div class="flex">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Monthly reports</p>
+            </div>
+          </div>
+          <button class="py-1 px-4 rounded-lg mt-5">join wishlist</button>
+        </div>
+        <!-- second -->
+        <div class="price-2 relative border-[#ffffff50]  flex flex-col p-4 border justify-between h-[431.33px] ">
+          <div class="z-10">
+            <h2 class="text-[30px]">pro</h2>
+            <p class="mb-2">$79/mo</p>
+            <span class="h-[1px] w-full bg-gray-700 inline-block"></span>
+            <div class="flex mt-3 mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Keyword optimization</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Automated meta tags</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">SEO monitoring</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Monthly reports</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Content suggestions</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Link optimization</p>
+            </div>
+          </div>
+          <button type="button"  class="py-1 px-4 rounded-lg mt-5 cursor-pointer">join wishlist</button>
+        </div>
+        <!-- third -->
+        <div class="price-3 flex relative flex-col p-4 border border-[#ffffff50] justify-between ">
+          <div class="z-10">
+            <h2 class="text-[30px]">Business</h2>
+            <p class="mb-2">$149/mo</p>
+            <span class="h-[1px] w-full bg-gray-700 inline-block"></span>
+            <div class="flex mt-3 mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Keyword optimization</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Automated meta tags</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">SEO monitoring</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Monthly reports</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Content suggestions</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Link optimization</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">Multi-user access</p>
+            </div>
+            <div class="flex mb-2">
+              <i class="ri-arrow-right-line"></i>
+              <p class="ml-2">API integration</p>
+            </div>
+          </div>
+          <button class="py-1 px-4 rounded-lg mt-5">join wishlist</button>
+        </div>
+      </div>
+    </div>
+    <!-- end prices -->
+    <!-- start contact -->
+    <div class="container mx-auto mt-20 contact overflow-hidden pt-5 border-b border-[#ffffff70] pb-10 ">
+      <h1 class="md:text-[50px] text-[36px] text-center">AI-driven SEO <br> for everyone.</h1>
+      <div class="w-fit p-2 mt-5 rounded-lg mx-auto md:border md:border-[#ffffff40] flex flex-col md:flex-row gap-2">
+        <input type="email" class="bg-transparent rounded-lg border border-[#ffffff40] md:border-0 outline-0 p-2 " placeholder="your email">
+        <button class="rounded-lg bg-white mt-2 md:mt-0 py-1 px-4 text-[black]">Join waitlist</button>
+      </div>
+      <p class="text-[#ffffff70] text-[15px] text-center mt-4">No credit card required  <span class="mx-2">|</span>  7-days free trial</p>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer class="container flex md:flex-row flex-col justify-between my-20 mx-auto px-10">
+      <div class="flex md:flex-col flex-row justify-between mb-10 items-center">
+        <img src="assets/Logo.png" class="w-[50px] h-[50px]" alt="">
+        <div>
+          <i class="ri-twitter-x-line text-[22px] mr-2"></i>
+          <i class="ri-instagram-line text-[22px] mr-2"></i>
+          <i class="ri-youtube-line text-[22px] "></i>
+        </div>
+      </div>
+      <div class="flex gap:10 md:gap-20 flex-col md:flex-row">
+        <div class="flex gap-20 justify-evenly">
+          <ul>
+            <li class="mb-4">Product</li>
+            <li class="text-[#ffffff70] mb-3 ">Features</li>
+            <li class="text-[#ffffff70] mb-3">Integration</li>
+            <li class="text-[#ffffff70] mb-3">Updates</li>
+            <li class="text-[#ffffff70] mb-3">FAQ</li>
+            <li class="text-[#ffffff70] mb-3">Pricing</li>
+          </ul>
+          <ul>
+            <li class="mb-4">Company</li>
+            <li class="text-[#ffffff70] mb-3 ">About</li>
+            <li class="text-[#ffffff70] mb-3">Blog</li>
+            <li class="text-[#ffffff70] mb-3">Careers</li>
+            <li class="text-[#ffffff70] mb-3">Manifesto</li>
+            <li class="text-[#ffffff70] mb-3">Press</li>
+            <li class="text-[#ffffff70] mb-3">Contract</li>
+          </ul>
+        </div>
+        <div class="flex gap-20 justify-evenly">
+          <ul>
+            <li class="mb-4">Resources</li>
+            <li class="text-[#ffffff70] mb-3 ">Examples</li>
+            <li class="text-[#ffffff70] mb-3">Community</li>
+            <li class="text-[#ffffff70] mb-3">Guides</li>
+            <li class="text-[#ffffff70] mb-3">Docs</li>
+            <li class="text-[#ffffff70] mb-3">Press</li>
+          </ul>
+          <ul>
+            <li class="mb-4">Legal</li>
+            <li class="text-[#ffffff70] mb-3 ">Privacy</li>
+            <li class="text-[#ffffff70] mb-3">Terms</li>
+            <li class="text-[#ffffff70] mb-3">Security</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="dist/main.js"></script>
+  </body>
+</html>

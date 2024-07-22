@@ -1,0 +1,174 @@
+*{
+    text-transform: capitalize;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #020103;
+}
+nav {
+    button{
+        background-color: #8C45FF40;
+        box-shadow: inset 0 0 6px 3px #ffffff40;
+    }
+    ul li{
+        color: #ffffff60;
+        a:hover{
+            color: #8C45FF;
+            text-shadow: 0 0 2px #8C45FF;
+        }
+    }
+    
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }    
+    50%{
+        background-position: 100% 50%;
+    }    
+    100%{
+        background-position: 0 50%;
+    }    
+}
+.hero h1{
+    background: linear-gradient(180deg,white 60% , #8C45FF );
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 -30px 100px 0px #8C45FF ;
+}
+.hero img{
+    box-shadow: 0 -30px 100px 0px #8C45FF90 ;
+}
+.hero .head button{
+    box-shadow: 0 -40px 200px 125px #9855FF50;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180deg, #00000000, #050208);
+}
+@media (max-width : 750px) {
+    .hide{
+        opacity: 0;
+    }
+    .vis{
+        transition: 0.3s;
+        opacity: 1;
+    }
+    .cen{
+        transition: 0.3s;
+        top: 8px;
+        background-color: #8C45FF ;
+    }
+    .rot{
+        transition: 0.3s;
+        transform: rotate(45deg);
+    }
+    .rot-{
+        transition: 0.3s;
+        transform: rotate(-45deg);
+    }
+    .def{
+        transition: 0.3s;
+        transform: rotate(0);
+    }
+    .exp{
+        transition: 0.8s;
+        width: 200px;
+        height: calc(50vh - 66px);
+    }
+    .shr{
+        transition: 0.8s;
+        width: 0;
+        height: calc(50vh - 66px);
+    }
+    nav ul{
+        background: linear-gradient(45deg, #2b0071 , #10002b , #2b0071 , #10002b) ;
+        background-size: 300% 300%;
+        animation: color 4s ease-in-out infinite;
+        z-index: 10;
+        li{
+            color: white;
+        }
+    }
+    .hero::before{
+        height: 100px;
+    }
+    .bl{
+        background-color: black;
+        opacity: 0.8;
+        transition: 0.3s;
+        display: block;
+    }
+    .opacity{
+        opacity: 0;
+        transition: 0.3s;
+        display: none;
+    }
+}
+.hero h1{
+    font-size: 35px;
+}
+.client img{
+    box-shadow: 0px 0px 110px 10px #8C45FF;
+}
+.price button{
+    background-color: #3D3D3D;
+    box-shadow: inset 0 0 6px 3px #ffffff40;
+}
+.price button:hover{
+    transition: 0.3s;
+    background-color: #8C45FF40;
+}
+.contact div{
+    box-shadow: 0 -160px 180px 30px #8C45FF;
+}
+.lef{
+    background-color: #374151;
+    left: 2px;
+    transition: 0.3s;
+}
+.right{
+    left: calc(100% - 22px) ;
+    background: white;
+    transition: 0.3s;
+}
+.violet{
+    transition: 0.3s;
+    background-color: #8C45FF;
+}
+.price-2{
+    box-shadow: 0 -10px 70px -10px #8C45FF;
+    background-image: url(assets/pattern\ 1.png) , linear-gradient(to top , #361764 , #010002);
+    background-size: 100% 120%;
+}
+.price-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black , transparent);
+}
+.price-1 , .price-3{
+    background-image: url(assets/pattern\ 1.png) , linear-gradient(to top , #361764 , #010002);
+    background-size: 100% 120%;
+}
+.price-1::before , .price-3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black , transparent);
+}
+.price-3::before{
+    background: linear-gradient(black 50% , transparent);
+}
